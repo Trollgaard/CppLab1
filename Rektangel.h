@@ -1,5 +1,3 @@
-#include <sstream>
-
 class Rektangel
 {public:
 	Rektangel(Canvas & cv, int ulx,int uly, int width,int height, Colorf cf);
@@ -18,5 +16,5 @@ private:
 	Colorf _cf;
 	Pointf _ulPoint, _lrPoint, _rektText, _rektCp, _cp2;
 	Innercirkel c1;
-	stringstream _text;
+	char _text[100];
 };

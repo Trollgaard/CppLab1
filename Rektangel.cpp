@@ -35,8 +35,8 @@ void Rektangel::draw(Font & font)
 		_cv->draw_line(_rektCp, _cp2, Colorf(255,255,255,255));
 
 		_rektText = Pointf(_ulPoint.x, (_lrPoint.y + 25));
-		_text << "Omkrets = " << omkrets() << ", Area = " << area();
-		font.draw_text(*_cv, _rektText, _text.str(), Colorf(0,0,0,1));
+		sprintf(_text, "Omkrets = %d, Area = %d", omkrets(), area());
+		font.draw_text(*_cv, _rektText, _text, Colorf(0,0,0,1));
 
 		c1.update();
 		c1.draw(font);

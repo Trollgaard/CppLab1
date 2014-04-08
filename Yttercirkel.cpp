@@ -15,6 +15,7 @@
 		_hy = rand()%8+1;
 		_hx = rand()%8+1;
 		_r = r;
+		//r->setc2p(this); //Den borde vara här tyckte Bengt, men orkar inte klura ut vad som behövs då
 	}
 
 	void Yttercirkel::update()
