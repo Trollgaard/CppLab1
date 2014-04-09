@@ -1,3 +1,4 @@
+#include "math.h"
 #include "displayprogram.h"
 #include <time.h>
 #include "Innercirkel.h"
@@ -15,6 +16,7 @@ Innercirkel::Innercirkel  (Rektangel* r,Canvas & cv, int cx,int cy, int rad, Col
 	srand(time(NULL));
 	_hy = rand()%8+1;
 	_hx = rand()%8+1;
+	_pi = arctan(1)*4
 }
 
 void Innercirkel::update()
